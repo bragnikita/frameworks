@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+(C) So-net Corporation. All Rights reserved.
+-->
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
+    <datasource jndi-name="java:jboss/datasources/MASTER/master-test" pool-name="MASTER.master">
+        <connection-url>jdbc:sybase:Tds:core-autotestdb2b.gyom.plus.so-net.ne.jp:9000/master</connection-url>
+        <driver>sybase</driver>
+        <connection-property name="CHARSET">
+            sjis
+        </connection-property>
+        <connection-property name="SERVER_INITIATED_TRANSACTIONS">
+            false
+        </connection-property>
+        <connection-property name="IGNORE_DONE_IN_PROC">
+            true
+        </connection-property>
+        <security>
+            <user-name>webbl</user-name>
+            <password>***</password>
+        </security>
+    </datasource>
+    <datasource jndi-name="java:jboss/datasources/MASTER/tsnet01db-test" pool-name="MASTER.tsnet01db">
+        <connection-url>jdbc:sybase:Tds:core-autotestdb2b.gyom.plus.so-net.ne.jp:9000/tsnet01db</connection-url>
+        <driver>sybase</driver>
+        <connection-property name="CHARSET">
+            sjis
+        </connection-property>
+        <connection-property name="SERVER_INITIATED_TRANSACTIONS">
+            false
+        </connection-property>
+        <security>
+            <user-name>webbl</user-name>
+            <password>***</password>
+        </security>
+    </datasource>
+</datasources>
